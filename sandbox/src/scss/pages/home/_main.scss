@@ -3,4 +3,42 @@ header{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    .header_btm_section{
+        padding-top: 170px;
+        .row{
+            .col-xl-5{
+                p{
+                    font-size: 50px;
+                    max-width: 431px;
+                      color: #2b3443;
+                      font-weight: 600;
+                      &:nth-child(2){
+                        font-size: 22px;
+                        color: #2b3443bd;
+                      }
+                    span{
+                    position: relative;
+                    img{
+                        width: 160px;
+                        position: absolute;
+                        top: 61px;
+                        left: -13px;
+                    
+                    }
+                 }
+            }
+            button{
+                background-color: #2b3443;
+                color: #fff;
+                padding: 16px 26px;
+                border: none;
+                border-radius: 10px;
+                font-size: 18px;
+                &:hover{
+                    margin-top: -4px;
+                }
+            }
+        }
+    }
+}
 }
