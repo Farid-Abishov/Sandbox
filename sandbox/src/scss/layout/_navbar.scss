@@ -1,12 +1,24 @@
 nav{
     .container{
-        padding: 20px 0px;
+        padding: 10px 0px;
         display: flex;
         justify-content: space-between;
         .nav_logo{
             padding: 10px 0px;
         }
         .nav_links{
+            @media (max-width:576px) {
+                display: none;
+                
+            }
+            @media (max-width:768px) {
+                display: none;
+                
+            }
+            @media (max-width:1024px) {
+                margin-right:-35px;
+
+            }
             margin-right:-150px;
             ul{
                 display: flex;
@@ -17,6 +29,9 @@ nav{
                     position: relative;
                     padding: 10px 0px;
                     position: relative;
+                    @media (max-width:1024px) {
+                        margin-left: 10px;
+                    }
                     &:hover{
                         .navlink_img_cntnt{
                         display: block;
@@ -25,6 +40,9 @@ nav{
                          .navlink_link_cntnt{
                             display: block;
                         }
+                        i{
+                            transform: rotate(180deg);
+                        }
                     }
                     a{
                      text-decoration: none;
@@ -32,9 +50,11 @@ nav{
                       font-size: 17px;
                     }
                     i{
-                        font-size: 12px;
+                        display: inline-block;
+                        font-size: 13px;
                         font-weight: 600;
                         cursor: pointer;
+                        transition: all .3s ease-in-out;
                     }
                     .navlink_img_cntnt{
                         position: absolute;
@@ -46,6 +66,11 @@ nav{
                         background-color:#2b3443;
                         transition: all .2s ease-in-out;
                         padding-top: 10px;
+                        @media(max-width:1024px){
+                            position: absolute;
+                            left: -211px;
+                            width: 842px;
+                        }
                         ul{
                             display: flex;
                             flex-wrap: wrap;
@@ -188,7 +213,7 @@ nav{
                          }
                          .navlink_img_cntnt{
                             position: absolute;
-                            left: -730px;
+                            left: -778px;
                             width: 1126px;
                             margin-top: 15px;
                             display: none;
@@ -198,6 +223,12 @@ nav{
                             padding-top: 10px;
                             z-index: 1;
                             height: 520px;
+                            @media(max-width:1024px){
+                                position: absolute;
+                                left: -521px;
+                                width: 839px;
+                                height: 650px;
+                            }
                             ul{
                                 display: flex;
                                 flex-wrap: wrap;
@@ -238,5 +269,34 @@ nav{
                 color: #343f52;
                 font-weight:bold;
             }
+            .bi-bar-chart-steps{
+                display: none;
+                cursor: pointer;
+                @media (max-width:576px) {
+                    display: inline-block;
+                }
+            }
         }
     }
+.active_nav{
+    position: fixed !important;
+    left:0;
+    top:0;
+    right: 0;
+    background-color: #fff !important;
+    animation-name: fadeInUp;
+    animation-duration: .2s;
+    z-index: 9999;
+}
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      top: -50px;
+    }
+    
+    to {
+      opacity: 1;
+      top: 0;
+    }
+  }

@@ -12,14 +12,38 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 576px) {
+  header {
+    background-position: 0%;
+  }
+}
 header .header_btm_section {
   padding-top: 170px;
+}
+@media (max-width: 576px) {
+  header .header_btm_section {
+    padding-top: 70px;
+  }
+}
+@media (max-width: 576px) {
+  header .header_btm_section .row .col-xl-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 header .header_btm_section .row .col-xl-5 p {
   font-size: 50px;
   max-width: 431px;
   color: #2b3443;
   font-weight: 600;
+}
+@media (max-width: 768px) {
+  header .header_btm_section .row .col-xl-5 p {
+    font-size: 35px;
+    max-width: 280px;
+  }
 }
 header .header_btm_section .row .col-xl-5 p:nth-child(2) {
   font-size: 22px;
@@ -34,6 +58,22 @@ header .header_btm_section .row .col-xl-5 p span img {
   top: 61px;
   left: -13px;
 }
+@media (max-width: 576px) {
+  header .header_btm_section .row .col-xl-5 p span img {
+    width: 131px;
+    position: absolute;
+    top: 47px;
+    left: -13px;
+  }
+}
+@media (max-width: 768px) {
+  header .header_btm_section .row .col-xl-5 p span img {
+    width: 120px;
+    position: absolute;
+    top: 47px;
+    left: -13px;
+  }
+}
 header .header_btm_section .row .col-xl-5 button {
   background-color: #2b3443;
   color: #fff;
@@ -47,7 +87,7 @@ header .header_btm_section .row .col-xl-5 button:hover {
 }
 
 nav .container {
-  padding: 20px 0px;
+  padding: 10px 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -56,6 +96,21 @@ nav .container .nav_logo {
 }
 nav .container .nav_links {
   margin-right: -150px;
+}
+@media (max-width: 576px) {
+  nav .container .nav_links {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  nav .container .nav_links {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  nav .container .nav_links {
+    margin-right: -35px;
+  }
 }
 nav .container .nav_links ul {
   display: flex;
@@ -68,6 +123,11 @@ nav .container .nav_links ul li {
   padding: 10px 0px;
   position: relative;
 }
+@media (max-width: 1024px) {
+  nav .container .nav_links ul li {
+    margin-left: 10px;
+  }
+}
 nav .container .nav_links ul li:hover .navlink_img_cntnt {
   display: block;
   transform: translateY(-7px);
@@ -75,15 +135,20 @@ nav .container .nav_links ul li:hover .navlink_img_cntnt {
 nav .container .nav_links ul li:hover .navlink_link_cntnt {
   display: block;
 }
+nav .container .nav_links ul li:hover i {
+  transform: rotate(180deg);
+}
 nav .container .nav_links ul li a {
   text-decoration: none;
   color: #343f52;
   font-size: 17px;
 }
 nav .container .nav_links ul li i {
-  font-size: 12px;
+  display: inline-block;
+  font-size: 13px;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 nav .container .nav_links ul li .navlink_img_cntnt {
   position: absolute;
@@ -95,6 +160,13 @@ nav .container .nav_links ul li .navlink_img_cntnt {
   background-color: #2b3443;
   transition: all 0.2s ease-in-out;
   padding-top: 10px;
+}
+@media (max-width: 1024px) {
+  nav .container .nav_links ul li .navlink_img_cntnt {
+    position: absolute;
+    left: -211px;
+    width: 842px;
+  }
 }
 nav .container .nav_links ul li .navlink_img_cntnt ul {
   display: flex;
@@ -224,7 +296,7 @@ nav .container .nav_links ul li:nth-child(5):hover .navlink_img_cntnt {
 }
 nav .container .nav_links ul li:nth-child(5) .navlink_img_cntnt {
   position: absolute;
-  left: -730px;
+  left: -778px;
   width: 1126px;
   margin-top: 15px;
   display: none;
@@ -234,6 +306,14 @@ nav .container .nav_links ul li:nth-child(5) .navlink_img_cntnt {
   padding-top: 10px;
   z-index: 1;
   height: 520px;
+}
+@media (max-width: 1024px) {
+  nav .container .nav_links ul li:nth-child(5) .navlink_img_cntnt {
+    position: absolute;
+    left: -521px;
+    width: 839px;
+    height: 650px;
+  }
 }
 nav .container .nav_links ul li:nth-child(5) .navlink_img_cntnt ul {
   display: flex;
@@ -270,4 +350,35 @@ nav .nav_icons i {
   font-size: 18px;
   color: #343f52;
   font-weight: bold;
+}
+nav .nav_icons .bi-bar-chart-steps {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  nav .nav_icons .bi-bar-chart-steps {
+    display: inline-block;
+  }
+}
+
+.active_nav {
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #fff !important;
+  animation-name: fadeInUp;
+  animation-duration: 0.2s;
+  z-index: 9999;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    top: -50px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
