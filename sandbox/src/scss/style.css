@@ -6,6 +6,28 @@
   outline: none;
 }
 
+.to-top {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #26344a;
+  background-color: #26344a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  display: none;
+  animation-name: fadeInUp;
+  animation-duration: 0.2s;
+}
+.to-top svg {
+  width: 20px;
+  height: 20px;
+}
+
 header {
   height: 97vh;
   background-position: center;
@@ -238,7 +260,7 @@ header .header_btm_section .row button:hover {
 #slider {
   padding: 100px 0px;
 }
-#slider span {
+#slider .slider_title {
   display: block;
   text-align: center;
   color: #959ca9;

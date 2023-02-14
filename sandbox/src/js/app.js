@@ -1,11 +1,17 @@
 const Navbar=document.querySelector(".navbar");
+const Totop=document.querySelector(".to-top");
 window.addEventListener("scroll",()=>{
-    if(window.scrollY>300){
+    if(window.scrollY>400){
      Navbar.classList.add("active_nav");
+     Totop.style.display="flex";
     }
     else{
         Navbar.classList.remove("active_nav");
+        Totop.style.display="none ";
     }
+})
+Totop && Totop.addEventListener("click", () =>{
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 })
 var swiper = new Swiper(".card-slider", {
     slidesPerView: 3,
