@@ -30,7 +30,9 @@ nav{
                     position: relative;
                     padding: 15px 0px;
                     position: relative;
-                   
+                   @media(max-width:1200px){
+                    margin-left: 15px;
+                   }
                     &:hover{
                         .navlink_img_cntnt{
                         display: block;
@@ -292,7 +294,7 @@ nav{
     background-color: #fff !important;
     animation-name: fadeInUp;
     animation-duration: .2s;
-    z-index: 9999;
+    z-index: 7777;
 }
 
 @keyframes fadeInUp {
