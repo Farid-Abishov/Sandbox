@@ -16,9 +16,13 @@ footer{
             }
             i{
               display: inline-block;
-              font-size: 18px;
+              font-size: 20px;
               color: #26344a;
-              margin-right: 6px;
+              margin-right: 11px;
+              cursor: pointer;
+              &:hover{
+                transform: translateY(-3px);
+              }
             }
           }
       }

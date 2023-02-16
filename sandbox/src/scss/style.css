@@ -894,9 +894,13 @@ footer .col-xl-3 .social_item li:nth-child(2) p {
 }
 footer .col-xl-3 .social_item li i {
   display: inline-block;
-  font-size: 18px;
+  font-size: 20px;
   color: #26344a;
-  margin-right: 6px;
+  margin-right: 11px;
+  cursor: pointer;
+}
+footer .col-xl-3 .social_item li i:hover {
+  transform: translateY(-3px);
 }
 footer .col-xl-3 .ftr_item p {
   color: #26344a;
