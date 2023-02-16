@@ -1,13 +1,25 @@
 const Navbar=document.querySelector(".navbar");
 const Totop=document.querySelector(".to-top");
+const Moblogo=document.querySelector(".mob_nav_logo");
+const Normlogo=document.querySelector(".Normal_logo");
+const Navlink=document.querySelector(".navlink");
+const Navlinkicon=document.querySelector(".navlink_icon");
 window.addEventListener("scroll",()=>{
     if(window.scrollY>400){
      Navbar.classList.add("active_nav");
      Totop.style.display="flex";
+     Moblogo.style.display="inline-block";
+     Normlogo.style.display="none";
+     Navlink.style.color="Black";
+     Navlinkicon.style.color="Blue";
     }
     else{
         Navbar.classList.remove("active_nav");
         Totop.style.display="none ";
+        Moblogo.style.display="none";
+        Normlogo.style.display="inline-block";
+        Navlink.style.color="#fff";
+        Navlinkicon.style.color="#fff";
     }
 })
 Totop&&Totop.addEventListener("click", () =>{

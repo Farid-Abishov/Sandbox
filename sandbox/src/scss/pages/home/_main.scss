@@ -73,13 +73,7 @@
     }
 }
 .active_mobnav{
-    
-    @media(max-width:768px){
-        display: block;
-    }
-    @media(min-width:768px){
-        display: none;
-    }
+    display: block;
 }
 header{
     background-position: center;

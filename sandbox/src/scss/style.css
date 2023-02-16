@@ -85,15 +85,8 @@ ul {
   font-size: 14px;
 }
 
-@media (max-width: 768px) {
-  .active_mobnav {
-    display: block;
-  }
-}
-@media (min-width: 768px) {
-  .active_mobnav {
-    display: none;
-  }
+.active_mobnav {
+  display: block;
 }
 
 header {
