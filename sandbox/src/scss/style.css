@@ -6,6 +6,11 @@
   outline: none;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 .to-top {
   width: 40px;
   height: 40px;
@@ -491,6 +496,7 @@ header .header_btm_section .row button:hover {
 
 #prices {
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 #prices p {
   text-align: center;
@@ -557,6 +563,72 @@ header .header_btm_section .row button:hover {
 }
 #prices .row .col-xl-3 .price_item .price_btn:hover {
   transform: translateY(-3px);
+}
+
+footer {
+  background-color: #f6f7f9;
+  padding: 100px 0px;
+}
+footer .col-xl-3 {
+  padding: 0;
+}
+footer .col-xl-3 .social_item {
+  padding: 0;
+  list-style-type: none;
+}
+footer .col-xl-3 .social_item li {
+  margin-bottom: 10px;
+}
+footer .col-xl-3 .social_item li:nth-child(2) {
+  max-width: 131px;
+}
+footer .col-xl-3 .social_item li:nth-child(2) p {
+  color: #26344a;
+}
+footer .col-xl-3 .social_item li i {
+  display: inline-block;
+  font-size: 18px;
+  color: #26344a;
+  margin-right: 6px;
+}
+footer .col-xl-3 .ftr_item p {
+  color: #26344a;
+}
+footer .col-xl-3 .ftr_item span {
+  color: #26344a;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+}
+footer .col-xl-3 .ftr_item ul li {
+  color: #26344a;
+  margin-bottom: 10px;
+}
+footer .col-xl-3 .ftr_item ul li a {
+  text-decoration: none;
+  color: #26344a;
+}
+footer .col-xl-3 .ftr_item ul li:nth-child(2) {
+  max-width: 146px;
+}
+footer .col-xl-3 .ftr_item .input_grp {
+  text-align: left;
+}
+footer .col-xl-3 .ftr_item .input_grp input {
+  display: inline-block;
+  border: none;
+}
+footer .col-xl-3 .ftr_item .input_grp input:nth-child(1) {
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+footer .col-xl-3 .ftr_item .input_grp input:nth-child(2) {
+  padding: 10px 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #26344a;
+  color: #fff;
 }
 
 nav .container {
@@ -627,7 +699,7 @@ nav .container .nav_links ul li i {
 nav .container .nav_links ul li .navlink_img_cntnt {
   position: absolute;
   left: -398px;
-  width: 1126px;
+  width: 1063px;
   margin-top: 15px;
   display: none;
   border-radius: 15px;
@@ -771,7 +843,7 @@ nav .container .nav_links ul li:nth-child(5):hover .navlink_img_cntnt {
 nav .container .nav_links ul li:nth-child(5) .navlink_img_cntnt {
   position: absolute;
   left: -778px;
-  width: 1126px;
+  width: 1063px;
   margin-top: 15px;
   display: none;
   border-radius: 15px;
