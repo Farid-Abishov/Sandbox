@@ -280,6 +280,11 @@ nav .nav_contact {
   justify-content: space-between;
   gap: 10px;
 }
+@media (max-width: 768px) {
+  nav .nav_contact {
+    padding-right: 10px;
+  }
+}
 nav .nav_contact ul {
   padding-top: 12px;
 }
@@ -314,6 +319,11 @@ nav .nav_contact ul li ul li {
   color: black;
   margin-bottom: 7px;
 }
+@media (max-width: 768px) {
+  nav .nav_contact a {
+    display: none;
+  }
+}
 nav .nav_contact a button {
   background-color: #fff;
   border: none;
@@ -324,6 +334,27 @@ nav .nav_contact a button {
 }
 nav .nav_contact a button:hover {
   transform: translateY(-4px);
+}
+nav .nav_contact .bi-bar-chart-steps {
+  color: #fff;
+  padding-top: 12px;
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  nav .nav_contact .bi-bar-chart-steps {
+    display: inline-block;
+  }
+}
+@media (max-width: 768px) {
+  nav .nav_contact .bi-bar-chart-steps {
+    display: inline-block;
+  }
+}
+@media (max-width: 992px) {
+  nav .nav_contact .bi-bar-chart-steps {
+    display: inline-block;
+  }
 }
 
 .active_nav {

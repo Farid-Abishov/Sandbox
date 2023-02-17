@@ -274,6 +274,9 @@ nav{
             display: flex;
             justify-content: space-between;
             gap: 10px;
+            @media(max-width:768px){
+                padding-right: 10px;
+            }
             ul{
                 padding-top: 12px;
                 li{
@@ -312,6 +315,9 @@ nav{
                 }
             }
             a{
+                @media(max-width:768px){
+                    display: none;
+                }
                 button{
                     background-color: #fff;
                     border: none;
@@ -322,6 +328,22 @@ nav{
                     &:hover{
                         transform: translateY(-4px);
                     }
+                }
+            }
+            .bi-bar-chart-steps{
+                color: #fff;
+                padding-top: 12px;
+                display: none;
+                cursor: pointer;
+                @media (max-width:576px) {
+                    display: inline-block;
+                }
+                @media (max-width:768px) {
+                    display: inline-block;
+
+                }
+                @media (max-width:992px) {
+                    display: inline-block;
                 }
             }
         }
