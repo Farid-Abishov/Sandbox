@@ -322,6 +322,9 @@ nav .nav_contact a button {
   color: black;
   font-weight: 600;
 }
+nav .nav_contact a button:hover {
+  transform: translateY(-4px);
+}
 
 .active_nav {
   position: fixed !important;

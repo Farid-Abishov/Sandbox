@@ -319,6 +319,9 @@ nav{
                     padding: 10px 18px;
                     color: black;
                     font-weight: 600;
+                    &:hover{
+                        transform: translateY(-4px);
+                    }
                 }
             }
         }
