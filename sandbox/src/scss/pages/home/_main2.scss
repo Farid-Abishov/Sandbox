@@ -269,27 +269,56 @@ nav{
                 }
             }
         }
-        .nav_icons{
-            padding: 10px 0px;
-            i{
-                display: inline-block;
-                margin-right: 12px;
-                font-size: 18px;
-                color: #fff;
-                font-weight:bold;
-            }
-            .bi-bar-chart-steps{
-                display: none;
-                cursor: pointer;
-                @media (max-width:576px) {
-                    display: inline-block;
-                }
-                @media (max-width:768px) {
-                    display: inline-block;
+        
+        .nav_contact{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            ul{
+                padding-top: 12px;
+                li{
+                    color: #fff;
+                    position: relative;
+                    &:hover{
+                        ul{
+                            display: block;
+                        }
+                        i{
+                            display: inline-block;
+                            transform: rotate(180deg);
+                        }
+                    }
+                    i{
+                        transition: all .4s ease-in-out;
+                        font-size: 14px;
+                    }
+                    ul{
+                        background-color: #fff;
+                        position: absolute;
+                        top: 25px;
+                        left: -20px;
+                        padding: 14px 20px;
+                        border-radius: 10px;
+                        display: none;
+                        &:hover{
+                            display: block;
+                        }
 
+                        li{
+                            color: black;
+                            margin-bottom: 7px;
+                        }
+                    }
                 }
-                @media (max-width:992px) {
-                    display: inline-block;
+            }
+            a{
+                button{
+                    background-color: #fff;
+                    border: none;
+                    border-radius: 20px;
+                    padding: 10px 18px;
+                    color: black;
+                    font-weight: 600;
                 }
             }
         }
@@ -304,6 +333,18 @@ nav{
     animation-duration: .2s;
     z-index: 7777;
 }
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      top: -50px;
+    }
+    
+    to {
+      opacity: 1;
+      top: 0;
+    }
+  }
+
 .mob_nav{
     position: fixed;
     top: 0;
@@ -489,19 +530,220 @@ header{
         }
     }
 }
-@keyframes fadeInUp {
-    from {
-      opacity: 0;
-      top: -50px;
-    }
-    
-    to {
-      opacity: 1;
-      top: 0;
-    }
-  }
+ 
+#service{
+    padding-top: 120px;
+    padding-bottom: 80px;
+    .row{
+        .col-xl-5{
+            .about_service{
+                span{
+                    color:#aab0bc;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                h2{
+                    color: #26344a;
+                    max-width: 339px;
+                }
+                p{
+                    color: #2f4364;
+                    font-size: 15px;
+                }
+                a{
+                    button{
+                        border: none;
+                        border-radius: 20px;
+                        background-color: #26344a;
+                        color: #fff;
+                        padding: 10px 14px;
+                        &:hover{
+                            transform: translateY(-4px);
+                        }
+                    }
+                }
+            }
+        }
+        .col-xl-7{
+            .row{
+                .col-xl-5{
+                    .service_card{
+                        background-color:#fef3e4;
+                        border-radius: 6px;
+                        padding: 30px;
+                        .ser_svg{
+                            width: 40px;
+                            height: 40px;
+                            svg{
+                                width: 100%;
+                                height: 100%;
+                               .lineal-fill{
+                                fill: #fcd49b;
+                               }
+                               .lineal-stroke{
+                                fill:#36496d;
+                               }
+                            }
+                            span{
+                            color: #2b3443;
+                            }
+                            p{
+                                color: #3a4d6e;
+                                max-width: 180px;
+                                font-size: 10px;
+                            }
 
+                        }
+                    }
+                }
+                .scnd_col5{
+                   .service_card{
+                    background-color: #eaf3ef !important;
+                   }
+                }
+                .col-xl-7{
 
+                    .service_card{
+                        background-color:#fae6e7;
+                        border-radius: 6px;
+                        padding: 30px;
+                        .ser_svg{
+                            width: 40px;
+                            height: 40px;
+                            svg{
+                                width: 100%;
+                                height: 100%;
+                               .lineal-fill{
+                                fill: #fcd49b;
+                               }
+                               .lineal-stroke{
+                                fill:#36496d;
+                               }
+                            }
+                            span{
+                            color: #2b3443;
+                            }
+                            p{
+                                color: #3a4d6e;
+                                max-width: 180px;
+                                font-size: 10px;
+                            }
+
+                        }
+                    }
+                }
+                .col-xl-6{
+                    .service_card{
+                        background-color:#e0e9fa;
+                        border-radius: 6px;
+                        padding: 30px;
+                        .ser_svg{
+                            width: 40px;
+                            height: 40px;
+                            svg{
+                                width: 100%;
+                                height: 100%;
+                               .lineal-fill{
+                                fill: #8caeec;
+                               }
+                               .lineal-stroke{
+                                fill: #36496d;
+                               }
+                            }
+                            span{
+                            color: #2b3443;
+                            }
+                            p{
+                                color: #3a4d6e;
+                                max-width: 180px;
+                                font-size: 10px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#wrapper{
+    padding-bottom: 20px;
+    .row{
+        .col-xl-7{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .col-xl-5{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .progres_body{
+                .prog-title{
+                  font-size: 30px;
+                  font-weight: 600;
+                  color: #26344a;
+                }
+                .progres_cont{
+                    p{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    .progress{
+                        margin-top: 2px;
+                        margin-bottom: 30px;
+                        height: 8px;
+                    }
+                }
+            }
+        }
+        .col-xl-6{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            p{
+                font-size: 30px;
+                color: #26344a;
+                font-weight:600 ;
+                padding-top: 20px;
+            }
+            span{
+                font-size: 14px;
+                color: #26344a;
+            }
+            .row{
+                .col-xl-6{
+                    span{
+                         
+                            font-size: 18px;
+                            max-width: 194px;
+                            display: inline-block;
+                            i{
+                                color: rgb(34, 109, 147);
+                            }
+                            @media(max-width:768px){
+                            max-width: 100%;
+                            }
+                    }
+                }
+
+            }
+            
+        }
+    }
+}
 footer{
     background-color: #f6f7f9;
     padding: 100px 0px;

@@ -33,7 +33,7 @@ var swiper = new Swiper(".card-slider", {
       el: ".swiper-pagination",
       clickable: true,
       breakpoints: {
-        240: {
+        576: {
           slidesPerView: 1,
           spaceBetween: 20,
         },
