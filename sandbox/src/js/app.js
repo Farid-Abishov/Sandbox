@@ -11,7 +11,8 @@ window.addEventListener("scroll",()=>{
      Totop.style.display="flex";
      Moblogo.style.display="inline-block";
      Normlogo.style.display="none";
-     Navlink.style.color="Black";
+    //  Navlink.style.color="Black";
+     Navlink.classList.add("active-navlink");
      Navlinkicon.style.color="Blue";
      ContactBtn.style.background="#3f78e0"
      ContactBtn.style.color="#fff"

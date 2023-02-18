@@ -769,6 +769,69 @@ header{
         }
     }
 }
+#price{
+    padding: 40px 0px;
+    .row{
+        .col-xl-4{
+            &:nth-child(3){
+                background-color:#f6f7f9;
+                border-radius: 10px;
+                
+            }
+            padding: 0;
+             .price_item{
+                padding: 20px;
+                text-align: center;
+                .price_title{
+                    color: #151b24;
+                }
+                .price{
+                    span{
+                        &:nth-child(2){
+                          font-size: 40px;
+                        }
+                        &:nth-child(3){
+                          font-size: 15px;
+                        }
+
+                    }
+                }
+                .price_list{
+                    ul{
+                        padding: 0;
+                        list-style: none;
+                        width: 50%;
+                        margin: 0 auto;
+                        @media(max-width:768px){
+                         text-align: center;
+                        }
+                        li{
+                            margin-top: 7px;
+                            .bi-check-lg{
+                                color: rgb(27, 167, 27);
+                            }
+                            .bi-x{
+                                color: red;
+                            }
+                        }
+                    }
+                }
+                .price_btn{
+                 text-decoration: none;
+                 color: #fff;
+                 background-color: rgb(45, 109, 165);
+                 padding: 10px 20px;
+                 border-radius: 10px;
+                 display: inline-block;
+                 margin-top: 10px;
+                 &:hover{
+                    transform: translateY(-3px);
+                 }
+                }
+            }
+        }
+    }
+}
 footer{
     background-color: #f6f7f9;
     padding: 100px 0px;
@@ -843,4 +906,7 @@ footer{
           }
       }
     }
-   }
+ }
+ .active-navlink{
+    color: black;
+ }

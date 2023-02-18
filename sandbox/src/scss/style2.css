@@ -759,6 +759,62 @@ header .header_btm_section .row button:hover {
   }
 }
 
+#price {
+  padding: 40px 0px;
+}
+#price .row .col-xl-4 {
+  padding: 0;
+}
+#price .row .col-xl-4:nth-child(3) {
+  background-color: #f6f7f9;
+  border-radius: 10px;
+}
+#price .row .col-xl-4 .price_item {
+  padding: 20px;
+  text-align: center;
+}
+#price .row .col-xl-4 .price_item .price_title {
+  color: #151b24;
+}
+#price .row .col-xl-4 .price_item .price span:nth-child(2) {
+  font-size: 40px;
+}
+#price .row .col-xl-4 .price_item .price span:nth-child(3) {
+  font-size: 15px;
+}
+#price .row .col-xl-4 .price_item .price_list ul {
+  padding: 0;
+  list-style: none;
+  width: 50%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  #price .row .col-xl-4 .price_item .price_list ul {
+    text-align: center;
+  }
+}
+#price .row .col-xl-4 .price_item .price_list ul li {
+  margin-top: 7px;
+}
+#price .row .col-xl-4 .price_item .price_list ul li .bi-check-lg {
+  color: rgb(27, 167, 27);
+}
+#price .row .col-xl-4 .price_item .price_list ul li .bi-x {
+  color: red;
+}
+#price .row .col-xl-4 .price_item .price_btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(45, 109, 165);
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 10px;
+}
+#price .row .col-xl-4 .price_item .price_btn:hover {
+  transform: translateY(-3px);
+}
+
 footer {
   background-color: #f6f7f9;
   padding: 100px 0px;
@@ -827,4 +883,8 @@ footer .col-xl-3 .ftr_item .input_grp input:nth-child(2) {
   border-bottom-right-radius: 10px;
   background-color: #26344a;
   color: #fff;
+}
+
+.active-navlink {
+  color: black;
 }/*# sourceMappingURL=style2.css.map */
