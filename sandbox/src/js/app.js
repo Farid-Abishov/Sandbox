@@ -11,7 +11,7 @@ window.addEventListener("scroll",()=>{
      Totop.style.display="flex";
      Moblogo.style.display="inline-block";
      Normlogo.style.display="none";
-    //  Navlink.style.color="Black";
+    //  Navlink.style.color="black ";
      Navlink.classList.add("active-navlink");
      Navlinkicon.style.color="Blue";
      ContactBtn.style.background="#3f78e0"
@@ -38,19 +38,19 @@ var swiper = new Swiper(".card-slider", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-      breakpoints: {
-        576: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 50,
-        },
+    },
+    breakpoints: {
+      240: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
       },
     },
   });
