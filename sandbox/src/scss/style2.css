@@ -886,5 +886,5 @@ footer .col-xl-3 .ftr_item .input_grp input:nth-child(2) {
 }
 
 .active-navlink {
-  color: black;
+  color: black !important;
 }/*# sourceMappingURL=style2.css.map */

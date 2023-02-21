@@ -2,8 +2,8 @@ const Navbar=document.querySelector(".navbar");
 const Totop=document.querySelector(".to-top");
 const Moblogo=document.querySelector(".mob_nav_logo");
 const Normlogo=document.querySelector(".Normal_logo");
-const Navlink=document.querySelector(".navlink");
-const Navlinkicon=document.querySelector(".navlink_icon");
+const Navlink=document.querySelectorAll(".navlink");
+const Navlinkicon=document.querySelector("navlink_icon");
 const ContactBtn=document.querySelector(".cntct-btn");
 window.addEventListener("scroll",()=>{
     if(window.scrollY>400){
@@ -11,9 +11,9 @@ window.addEventListener("scroll",()=>{
      Totop.style.display="flex";
      Moblogo.style.display="inline-block";
      Normlogo.style.display="none";
-    //  Navlink.style.color="black ";
-     Navlink.classList.add("active-navlink");
-     Navlinkicon.style.color="Blue";
+    for (const link of  Navlink ) {
+       link.style.color="black"
+    }
      ContactBtn.style.background="#3f78e0"
      ContactBtn.style.color="#fff"
     }
@@ -22,10 +22,11 @@ window.addEventListener("scroll",()=>{
         Totop.style.display="none ";
         Moblogo.style.display="none";
         Normlogo.style.display="inline-block";
-        Navlink.style.color="#fff";
-        Navlinkicon.style.color="#fff";
         ContactBtn.style.background="#fff"
         ContactBtn.style.color="black"
+        for (const link of  Navlink ) {
+          link.style.color="#fff"
+       }
     }
 })
 Totop&&Totop.addEventListener("click", () =>{
