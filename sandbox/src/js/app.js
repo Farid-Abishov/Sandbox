@@ -58,5 +58,5 @@ var swiper = new Swiper(".card-slider", {
 const Bar=document.querySelector(".bi-bar-chart-steps");
 const Mobile_nav=document.querySelector(".mob_nav");
 Bar&&Bar.addEventListener("click",()=>{
-    Mobile_nav.classList.toggle("active_mobnav");
+  Mobile_nav.classList.toggle("active_mobnav");
 }) 
